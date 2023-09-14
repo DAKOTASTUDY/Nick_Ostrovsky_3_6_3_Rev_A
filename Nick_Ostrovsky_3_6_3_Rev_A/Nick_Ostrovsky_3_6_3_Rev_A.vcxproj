@@ -128,9 +128,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="equilateral_triangle.cpp" />
+    <ClCompile Include="error.cpp" />
     <ClCompile Include="Figure.cpp" />
     <ClCompile Include="isosceles_triangle.cpp" />
-    <ClCompile Include="Nick_Ostrovsky_3_6_3_Rev_A.cpp" />
+    <ClCompile Include="Nick_Ostrovsky_3_8_2_Rev_B.cpp" />
     <ClCompile Include="parallelogram.cpp" />
     <ClCompile Include="Quad.cpp" />
     <ClCompile Include="rectangle.cpp" />
@@ -141,6 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="equilateral_triangle.h" />
+    <ClInclude Include="error.h" />
     <ClInclude Include="Figure.h" />
     <ClInclude Include="isosceles_triangle.h" />
     <ClInclude Include="parallelogram.h" />

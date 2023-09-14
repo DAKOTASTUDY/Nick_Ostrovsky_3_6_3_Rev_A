@@ -4,7 +4,7 @@ class Figure
 {
 private:
     int side_count;
-    std::string name;
+    std::string name = "Figure";
 public:
     Figure() : side_count(0), name("Figure") {}
     Figure(int s_c, std::string n) : side_count(s_c), name(n) {}

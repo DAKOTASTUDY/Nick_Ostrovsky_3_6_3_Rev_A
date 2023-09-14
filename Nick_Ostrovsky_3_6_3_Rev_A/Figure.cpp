@@ -18,7 +18,7 @@
     };
     void Figure::publication()
     {
-        std::cout << " \n\n\n\t Sides number: \n" << get_side() << std::endl;
+        std::cout << " \n\n\n\t Sides number: \n" << get_side()  << get_name() <<  std::endl;
     };
     std::string Figure::get_name()
     {

@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include "Figure.h"
+#include "error.h"
 class Quad : public Figure
 {
 protected:
@@ -9,7 +10,9 @@ protected:
 
 public:
     Quad() : Figure(4, "Quad"), a1(10), b1(10), c1(10), d1(10), _a1(33), _b1(33), _c1(33), _d1(33) {};
-    Quad(int a, int b, int c, int d, int a_, int b_, int c_, int d_) : Figure(4, " Quad "), a1(a), b1(b), c1(c), d1(d), _a1(a_), _b1(b_), _c1(c_), _d1(c) {};
+    Quad(int a, int b, int c, int d, int a_, int b_, int c_, int d_) : Figure(4, " Quad "), a1(a), b1(b), c1(c), d1(d), _a1(a_), _b1(b_), _c1(c_), _d1(c) {
+        if ((_a1 + _b1 + _c1 + _d1) > 360) { throw error("Summ of quad angles is greater then 360.", 5); }
+    };
 
 
     void publication() override;

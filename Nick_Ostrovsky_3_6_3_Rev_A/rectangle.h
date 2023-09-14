@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include "Quad.h"
+#include "error.h"
 class rectangle : public Quad
 {
 protected:
@@ -9,7 +10,9 @@ protected:
     std::string name1 = "rectangle";
 public:
     rectangle() : Quad(10, 10, 10, 10, 90, 90, 90, 90) {};
-    rectangle(int a, int b) : Quad(a, a, b, b, 90, 90, 90, 90) {};
+    rectangle(int a, int b) : Quad(a, a, b, b, 90, 90, 90, 90) {
+        if ((a1 != b1)||(c1 !=  d1)) { throw error("Sides not equal.", 6); }
+    };
 
 
     void publication() override
